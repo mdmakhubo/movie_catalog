@@ -1,0 +1,33 @@
+.movieItem img {
+    cursor: pointer;
+    transition: all 1.5s ease-in-out;
+    border-radius: 2.5%;
+  }
+
+.movieItem img:hover {
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+.listTitle {
+    color: white;
+}
+
+.info {
+    text-align: center;
+}
+.desc {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .movieItem {
+      margin-left: -50px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .movieItem img {
+        height: 50vh;
+    }
+  }

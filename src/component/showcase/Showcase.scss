@@ -1,0 +1,82 @@
+.slick-slide img {
+    height: 95vh;
+    width: 100vw;
+}
+
+.showcase {
+    position: relative;
+    margin-bottom: -140px;
+    .info {
+      display: block;
+      transform: translateY(-100%);
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      width: 98vw;
+      text-align: center;
+      font-family: "Protest Revolution", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 1px;
+  
+      h4 {
+        color: white;
+        font-size: 30px;
+        transition: all 1s ease;
+      }
+
+      h4:hover {
+        color: rgba(138, 35, 35, 0.832);
+        letter-spacing: 5px;
+      }
+  
+      p {
+        color: white;
+        font-size: 20px;
+        transition: all 1s ease;
+      }
+
+      p:hover {
+        letter-spacing: 2px;
+      }
+  
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 10px;
+      }
+  
+      .play,
+      .more {
+        color: rgba(138, 35, 35, 0.832);
+        font-size: 20px;
+        font-weight: 800;
+        transition: all 1s ease;
+
+        .infoOutlined {
+            margin-bottom: -12px;
+            font-size: 38px;
+        }
+  
+        span {
+          margin-left: 5px;
+        }
+      }
+
+      .more:hover {
+        color: white;
+      }
+    }
+    @media (max-width: 768px) {
+        .slick-slide img {
+            height: 100vh;
+        }
+      }
+    
+      @media (max-width: 480px) {
+        .slick-slide img {
+            height: 50vh;
+        }
+      }
+  }
+  

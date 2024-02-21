@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+:root {
+  --main-color: #0b0b0b;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.protest-revolution-regular {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
   }
 }
